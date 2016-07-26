@@ -18,8 +18,6 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         btnback=(Button) findViewById(R.id.button3);
         txt2=(TextView) findViewById(R.id.textView2);
         Bundle getdata= getIntent().getExtras();

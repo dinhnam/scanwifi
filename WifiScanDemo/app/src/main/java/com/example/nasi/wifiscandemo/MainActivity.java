@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
     WifiManager wifi;
     List<ScanResult> results;
     ArrayAdapter adapter;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,13 +35,11 @@ public class MainActivity extends AppCompatActivity {
         btn=(Button)findViewById(R.id.button);
         wifi =(WifiManager) getSystemService(Context.WIFI_SERVICE);
         final Intent manhinh2=new Intent(MainActivity.this,Main2Activity.class);
-
         if (wifi.isWifiEnabled() == false)
         {
             Toast.makeText(getApplicationContext(), "wifi is disabled..making it enabled", Toast.LENGTH_LONG).show();
             wifi.setWifiEnabled(true);
         }
-
         //xu ly bam nut scan
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
